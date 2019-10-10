@@ -1,0 +1,133 @@
+html {
+  font-size: 62.5%;
+}
+
+body,
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #926239;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+#showcase {
+  background-image: url("http://traversymedia.com/downloads/assets/beachshowcase.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+          box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+  padding: 0 2rem;
+}
+
+#showcase .showcase-tittle {
+  line-height: 1.4;
+  font-size: 5rem;
+}
+
+#showcase .showcase-content {
+  font-size: 2rem;
+}
+
+#showcase .showcase-btn {
+  font-size: 1.8rem;
+  border: #926239 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+#showcase .showcase-btn:hover {
+  background: #926239;
+  color: #fff;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+
+#section-1 .section-1-content {
+  background: #926239;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+          box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+}
+
+#section-2 .section-2-content {
+  background: white;
+  color: #926239;
+  padding: 5rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+          box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+}
+
+#section-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+#section-3 .box {
+  -webkit-box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+          box-shadow: 0px 2px 5px rgba(104, 104, 104, 0.4);
+}
+
+#section-3 .box:nth-child(1),
+#section-3 .box:nth-child(3) {
+  background: #926239;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+#section-3 .box:nth-child(2) {
+  background: white;
+  color: #926239;
+  padding: 1rem;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+footer .footer-content {
+  text-align: center;
+  background: #926239;
+  color: white;
+  height: 7rem;
+  line-height: 7rem;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 56.2%;
+  }
+  #section-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
